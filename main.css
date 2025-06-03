@@ -1,0 +1,95 @@
+/* Загальні скидання стилів */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4; /* Світло-сірий фон, як на скріншоті */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Верхній банер/слайдер */
+.top-banner {
+    background-color: #e0e0e0; /* Колір банера (можна змінити) */
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Для позиціонування кнопки закриття */
+    font-size: 0.9em;
+    border-bottom: 1px solid #ccc;
+    display: flex; /* Додано для кращого центрування та розміщення кнопки */
+    justify-content: center; /* Центрує текст */
+    align-items: center;
+}
+
+.top-banner p {
+    margin-right: 20px; /* Відступ для кнопки */
+}
+
+.close-banner-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #555;
+    padding: 0 5px;
+}
+
+.close-banner-btn:hover {
+    color: #000;
+}
+
+
+/* Стилі хедера */
+.site-header {
+    background-color: #ffffff; /* Білий фон хедера */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0; /* Невеликий відступ зверху та знизу */
+}
+
+.logo {
+    font-size: 2em; /* Розмір тексту логотипа */
+    font-weight: bold;
+    color: #008000; /* Зелений колір логотипа */
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-navigation li {
+    margin-left: 5px; /* Невеликий відступ між пунктами */
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #333; /* Колір тексту посилань */
+    padding: 10px 15px; /* Відступи всередині посилань */
+    display: block;
+    border-radius: 4px; /* Невелике заокруглення */
+    background-color: #e9ddc7; /* Бежевий фон для блоку навігації */
+}
+
+.main-navigation a:hover {
+    background-color: #d4c3a9; /* Темніший бежевий при наведенні */
+    color: #000;
+}
+
+/* Стилі для основного контенту (для прикладу) */
+main {
+    padding: 20px;
+    text-align: center;
+}
