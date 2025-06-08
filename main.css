@@ -1,163 +1,140 @@
-/* Загальні скидання стилів */
-body, h1, p, ul {
+/* --- Загальні скидання та стилі --- */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
-    background-color: #f4f4f4; /* Світло-сірий фон, як на скріншоті */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
+/* --- Загальний контейнер для центрування --- */
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- Стилі хедера --- */
+.site-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-}
-
-/* Верхній банер/слайдер */
-.top-banner {
-    background-color: #e0e0e0; /* Колір банера (можна змінити) */
-    padding: 10px;
-    text-align: center;
-    position: relative; /* Для позиціонування кнопки закриття */
-    font-size: 0.9em;
-    border-bottom: 1px solid #ccc;
-    display: flex; /* Додано для кращого центрування та розміщення кнопки */
-    justify-content: center; /* Центрує текст */
-    align-items: center;
-}
-
-.top-banner p {
-    margin-right: 20px; /* Відступ для кнопки */
-}
-
-.close-banner-btn {
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: #555;
-    padding: 0 5px;
-}
-
-.close-banner-btn:hover {
-    color: #000;
-}
-
-
-/* Стилі хедера */
-.site-header {
-    background-color: #ffffff; /* Білий фон хедера */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 0; /* Невеликий відступ зверху та знизу */
 }
 
 .logo {
-    font-size: 2em; /* Розмір тексту логотипа */
+    font-size: 2em;
     font-weight: bold;
-    color: #008000; /* Зелений колір логотипа */
+    color: #639a67; /* Той самий зелений, що і в hero-блоці */
 }
 
 .main-navigation ul {
     list-style: none;
     display: flex;
-}
-
-.main-navigation li {
-    margin-left: 5px; /* Невеликий відступ між пунктами */
+    gap: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .main-navigation a {
     text-decoration: none;
-    color: #333; /* Колір тексту посилань */
-    padding: 10px 15px; /* Відступи всередині посилань */
-    display: block;
-    border-radius: 4px; /* Невелике заокруглення */
-    background-color: #e9ddc7; /* Бежевий фон для блоку навігації */
+    color: #FFFFF0; /* чорний текст */
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #DEB887; /* бежевий фон */
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
+/* Замість бежевого фону робимо ефект при наведенні */
 .main-navigation a:hover {
-    background-color: #d4c3a9; /* Темніший бежевий при наведенні */
-    color: #000;
+    background-color: #d2ae74; /* Світло-сірий фон при наведенні */
+    color: #000; /* Можеш залишити або теж задати інший колір */
 }
 
-/* Стилі для основного контенту (для прикладу) */
-main {
-    padding: 20px;
+.hero-section {
+    background-color: #639a67;
+    color: #ffffff;
+    padding: 80px 0;
     text-align: center;
 }
+.hero-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+}
+.hero-text { flex: 1; max-width: 500px; }
+.hero-text h1 { font-size: 48px; margin-top: 0; margin-bottom: 15px; }
+.hero-text p { font-size: 18px; margin-bottom: 30px; }
+.hero-buttons { display: flex; gap: 15px; }
+.btn { padding: 12px 28px; border: 2px solid; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.3s ease; background: none; }
+.btn-outline { border-color: #ffffff; color: #ffffff; }
+.btn-outline:hover { background-color: #ffffff; color: #333333; }
+.btn-solid { background-color: #212529; border-color: #212529; color: #ffffff; }
+.btn-solid:hover { background-color: #424649; border-color: #424649; }
+.hero-image { flex-shrink: 0; }
+.hero-image img { width: 300px; height: 300px; background-color: #83b086; object-fit: cover; border-radius: 8px; }
+
+.about-section { padding: 80px 0; background-color: #ffffff; }
+.section-title { text-align: center; font-size: 36px; color: #333; margin-bottom: 50px; }
+.about-content { display: flex; justify-content: space-between; align-items: center; gap: 50px; }
+.about-description { flex: 1; max-width: 50%; font-size: 18px; color: #555; }
+.about-mission { flex: 1; max-width: 50%; display: flex; align-items: center; gap: 20px; background-color: #f8f9fa; padding: 30px; border: 1px solid #dee2e6; border-radius: 8px; }
+.mission-icon img { width: 70px; height: 70px; }
+.mission-text h3 { margin-top: 0; margin-bottom: 10px; font-size: 22px; color: #333; }
+.mission-text p { margin-bottom: 0; color: #555; }
 
 /* --- Стилі для футера --- */
 .site-footer {
-    background-color: #555555; /* Темно-сірий колір фону, як на зображенні */
-    color: #ffffff; /* Білий колір тексту */
-    padding: 20px 40px; /* Внутрішні відступи (верх/низ та ліво/право) */
-    font-size: 14px; /* Розмір шрифту */
+    background-color: #555555;
+    color: #ffffff;
+    padding: 20px 0;
+    font-size: 14px;
 }
-
-/* --- Контейнер для вирівнювання контенту всередині футера --- */
 .footer-container {
-    display: flex; /* Використовуємо Flexbox для розміщення елементів в рядок */
-    justify-content: space-between; /* Розміщуємо елементи по краях контейнера */
-    align-items: center; /* Вирівнюємо елементи по центру по вертикалі */
-    flex-wrap: wrap; /* Дозволяємо переносити елементи на новий рядок на маленьких екранах */
-    gap: 20px; /* Відстань між елементами, якщо вони переносяться */
-}
-
-/* --- Стилі для назви бренду (ліва частина) --- */
-.footer-brand a {
-    color: #ffffff; /* Колір тексту */
-    text-decoration: none; /* Прибираємо підкреслення у посилання */
-    font-size: 24px; /* Збільшуємо розмір шрифту для назви */
-    font-weight: bold; /* Робимо шрифт жирним */
-}
-
-/* --- Контейнер для контактної інформації (права частина) --- */
-.footer-contacts {
-    display: flex; /* Також використовуємо Flexbox для контактів */
-    gap: 25px; /* Відстань між контактними даними */
-    flex-wrap: wrap; /* Дозволяємо переносити контакти на новий рядок */
-    justify-content: center; /* Центруємо контакти, якщо вони переносяться */
-}
-
-/* --- Стилі для кожного окремого контакту --- */
-.contact-item {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px; /* Невелика відстань між текстом "Контакти:" та номером */
+    flex-wrap: wrap;
+    gap: 20px;
 }
-
-.contact-item span {
-    color: #cccccc; /* Трохи світліший колір для назв полів */
-}
-
-.contact-item a {
-    color: #ffffff; /* Колір тексту посилань */
-    text-decoration: none; /* Прибираємо підкреслення */
-}
-
-/* --- Ефект при наведенні курсору на посилання --- */
-.contact-item a:hover,
-.footer-brand a:hover {
-    text-decoration: underline; /* Додаємо підкреслення при наведенні */
-}
+.footer-brand a { color: #ffffff; text-decoration: none; font-size: 24px; font-weight: bold; }
+.footer-contacts { display: flex; gap: 25px; flex-wrap: wrap; justify-content: center; }
+.contact-item { display: flex; align-items: center; gap: 8px; }
+.contact-item span { color: #cccccc; }
+.contact-item a { color: #ffffff; text-decoration: none; }
+.contact-item a:hover, .footer-brand a:hover { text-decoration: underline; }
 
 /* --- Адаптивність для мобільних пристроїв --- */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column; /* Розміщуємо елементи в колонку */
-        text-align: center; /* Центруємо текст */
-    }
+@media (max-width: 992px) {
+    .hero-layout, .about-content { flex-direction: column; text-align: center; }
+    .hero-buttons { justify-content: center; }
+    .hero-image { margin-top: 40px; }
+    .about-description, .about-mission { max-width: 100%; }
+}
 
-    .footer-contacts {
-        flex-direction: column; /* Контакти також розміщуємо в колонку */
-        gap: 15px; /* Зменшуємо відстань між контактами */
-    }
+@media (max-width: 768px) {
+    .header-container, .footer-container { flex-direction: column; text-align: center; }
+    .main-navigation ul { flex-direction: column; margin-top: 15px; }
+    .footer-contacts { flex-direction: column; gap: 15px; }
 }
