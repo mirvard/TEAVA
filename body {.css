@@ -115,6 +115,178 @@ p {
     border-radius: 8px;
 }
 
+.tea-selection {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tea-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tea-card {
+    width: 200px;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tea-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tea-card img.cup {
+    opacity: 0;
+}
+
+.tea-card:hover img.cup {
+    opacity: 1;
+}
+
+.tea-card:hover img.loose {
+    opacity: 0;
+}
+
+.tea-card p {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    margin: 0;
+    padding: 8px 0;
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8BC282; 
+    color: #000;
+}
+
+.main-navigation {
+    background-color: #f3f4f6; 
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation li {
+    margin: 0 5px;
+}
+
+.main-navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #e5b47d; 
+    transition: background-color 0.3s;
+}
+
+.main-navigation a:hover {
+    background-color: #d09e67; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2e7d32; 
+}
+
+.logo span {
+    margin-left: 10px;
+}
+
+section {
+    padding: 40px 20px;
+    background-color: #8BC282; 
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #000;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #000;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.button-container .outline {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container .outline:hover {
+    background-color: #d4d4d4;
+}
+
+.button-container .filled {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container .filled:hover {
+    background-color: #333;
+}
+
+.image-placeholder {
+    width: 300px;
+    height: 360px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 8px;
+}
+
 .tea-card {
   width: 200px;
   text-align: center;

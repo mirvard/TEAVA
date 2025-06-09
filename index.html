@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEAVA - Головна</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    
 
     <header class="site-header">
-        <div class="header-container">
+        <div class="container">
             <div class="logo">
                 TEAVA
             </div>
@@ -29,75 +29,32 @@
     </header>
 
     <main>
-        <section class="hero-section">
-            <div class="container hero-layout">
-                <div class="hero-text">
-                    <h1>Спробуйте найкращий чай</h1>
-                    <p>Відкрийте для себе широкий вибір чаю преміум-класу з усього світу</p>
-                    <div class="hero-buttons">
-                        <button class="btn btn-outline">Дізнатися більше</button>
-                        <button class="btn btn-solid">Купити зараз</button>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="images/logo.jpg" alt="Логотип компанії">
-                </div>
+ <section class="tea-selection">
+        <h2>Обирайте свій чай</h2>
+        <div class="tea-grid">
+            <div class="tea-card">
+                <img src="images/green_tea_p.jpg" alt="Розсипний зелений чай" class="loose">
+                <img src="images/green_tea_c.jpg" alt="Чашка зеленого чаю" class="cup">
+                <p>Зелений чай</p>
             </div>
-        </section>
-
-        <section class="about-section">
-            <div class="container">
-                <h2 class="section-title">Про нас</h2>
-                <div class="about-content">
-                    <div class="about-description">
-                        <p>
-                            Історія TEAVA почалася із простої ідеї - зробити чай не просто напоєм,
-                            а ритуалом турботи для себе.
-                            Ми шукали ідеальний баланс між смаком, користю та красою.
-                            Сьогодні TEAVA - це символ натуральності, гармонії та турботи про
-                            тіло й душу
-                        </p>
-                    </div>
-                    <div class="about-mission">
-                        <div class="mission-icon">
-                             <img src="images/сup.jpg" alt="Чашка чаю">
-                        </div>
-                        <div class="mission-text">
-                            <h3>Наша місія</h3>
-                            <p>Змінити культуру споживання: повернутись до природного, простого і справжнього</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="tea-card">
+                <img src="images/black_tea_p.jpg" alt="Розсипний чорний чай" class="loose">
+                <img src="images/black_tea_c.jpg" alt="Чашка чорного чаю" class="cup">
+                <p>Чорний чай</p>
             </div>
-        </section>
-    </main>
-    
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <a href="#">TEAVA</a>
+            <div class="tea-card">
+                <img src="images/fruit_tea_p.jpg" alt="Розсипний фруктовий чай" class="loose">
+                <img src="images/fruit_tea_c.jpg" alt="Чашка фруктового чаю" class="cup">
+                <p>Фруктовий чай</p>
             </div>
-            <div class="footer-contacts">
-                <div class="contact-item">
-                    <span>Контакти:</span>
-                    <a href="tel:+380991234567">+38 (099) 123-45-67</a>
-                </div>
-                <div class="contact-item">
-                    <span>Email:</span>
-                    <a href="mailto:info@teava.com">info@teava.com</a>
-                </div>
-                <div class="contact-item">
-                    <span>Instagram:</span>
-                    <a href="#" target="_blank">@teava</a>
-                </div>
-                <div class="contact-item">
-                    <span>Tik Tok:</span>
-                    <a href="#" target="_blank">teava.ua</a>
-                </div>
+            <div class="tea-card">
+                <img src="images/white_tea_p.jpg" alt="Розсипний білий чай" class="loose">
+                <img src="images/white_tea_c.jpg" alt="Чашка білого чаю" class="cup">
+                <p>Білий чай</p>
             </div>
         </div>
-    </footer>
-
+    </section>
+</main>
     <script src="script.js"></script>
 </body>
 </html>
