@@ -15,7 +15,7 @@
             </div>
             <nav class="main-navigation">
                 <ul>
-                    <li><a href="#products">Продукція</a></li>
+                    <li><a href="#products">Ассортимент</a></li>  
                     <li><a href="#about">Про нас</a></li>
                     <li><a href="#contacts">Контакти</a></li>
                 </ul>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="about-mission">
                         <div class="mission-icon">
-                             <img src="images/сup.jpg" alt="Чашка чаю">
+                            <img src="images/сup.jpg" alt="Чашка чаю">
                         </div>
                         <div class="mission-text">
                             <h3>Наша місія</h3>
@@ -70,8 +70,162 @@
                 </div>
             </div>
         </section>
+        <section class="promo-banner">
+            <img src="images/banner.jpg" alt="Акційний банер">
+        </section>
+        <div class="assortment-title">
+            <h1>Наш Асортимент</h1>
+            <p>Перегляньте нашу підібрану колекцію органічних чаїв.</p>
+        </div>
+        <div id="product-grid" class="product-grid">
+
+            <div class="product-card" data-id="1">
+                <div class="product-image-container">
+                    <img src="images/green_tea_p.jpg"
+                         data-default-src="images/green_tea_p.jpg"
+                         data-hover-src="images/green_tea_c.jpg"
+                         alt="Зелений чай">
+                    <span class="product-tag">Органічний</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Зелений чай</h3>
+                    <div class="product-details">
+                        <p class="product-price">$15.00</p>
+                        <button class="add-to-cart-btn">Додати</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="2">
+                <div class="product-image-container">
+                    <img src="images/black_tea_p.jpg"
+                         data-default-src="images/black_tea_p.jpg"
+                         data-hover-src="images/black_tea_c.jpg"
+                         alt="Чорний чай">
+                    <span class="product-tag">Класичний</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Чорний чай</h3>
+                    <div class="product-details">
+                        <p class="product-price">$12.00</p>
+                        <button class="add-to-cart-btn">Додати</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="3">
+                <div class="product-image-container">
+                    <img src="images/herbal_tea_p.jpg"
+                         data-default-src="images/herbal_tea_p.jpg"
+                         data-hover-src="images/herbal_tea_c.jpg"
+                         alt="Трав'яний чай">
+                    <span class="product-tag">Без кофеїну</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Трав'яний чай</h3>
+                    <div class="product-details">
+                        <p class="product-price">$10.00</p>
+                        <button class="add-to-cart-btn">Додати</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="4">
+                <div class="product-image-container">
+                    <img src="images/white_tea_p.jpg"
+                         data-default-src="images/white_tea_p.jpg"
+                         data-hover-src="images/white_tea_c.jpg"
+                         alt="Білий чай">
+                    <span class="product-tag">Преміум</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Білий чай</h3>
+                    <div class="product-details">
+                        <p class="product-price">$20.00</p>
+                        <button class="add-to-cart-btn">Додати</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="5">
+                <div class="product-image-container">
+                    <img src="images/yellow_tea_p.jpg"
+                         data-default-src="images/yellow_tea_p.jpg"
+                         data-hover-src="images/yellow_tea_c.jpg"
+                         alt="Жовтий чай">
+                    <span class="product-tag">Преміум</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Жовтий чай</h3>
+                    <div class="product-details">
+                        <p class="product-price">$20.00</p>
+                        <button class="add-to-cart-btn">Додати</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="6">
+                <div class="product-image-container">
+                    <img src="images/oolong_tea_p.jpg"
+                         data-default-src="images/oolong_tea_p.jpg"
+                         data-hover-src="images/oolong_tea_c.jpg"
+                         alt="Улун (Оолонг)">
+                    <span class="product-tag">Класичний</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Улун (Оолонг)</h3>
+                    <div class="product-details">
+                        <p class="product-price">$9.00</p>
+                        <button class="add-to-cart-btn">Додати</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
-    
+
+    <div id="cart-section-wrapper" class="hidden">
+        <div class="cart-section-container container">
+            <div class="order-form">
+                <h2 class="form-title">Підтвердження</h2>
+                <form id="checkout-form">
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="text" placeholder="Прізвище" required>
+                    <input type="text" placeholder="Ім'я" required>
+                    <div class="student-question">
+                        <p>Ви студент?</p>
+                        <label><input type="radio" name="student" value="yes"> Так</label>
+                        <label><input type="radio" name="student" value="no" checked> Ні</label>
+                        <label><input type="radio" name="student" value="secret"> Секрет</label>
+                    </div>
+                    <input type="email" placeholder="Email">
+                    <button type="submit" class="submit-order-btn">Замовити</button>
+                </form>
+            </div>
+
+            <div class="cart-container">
+                <h2 class="cart-title">Кошик</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Товар</th>
+                            <th>Ціна</th>
+                            <th>Кількість</th>
+                            <th>ПІДСУМОК</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="total-label">Загальна сума (з урахуванням знижки):</td>
+                            <td id="cart-total" class="total-price">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-brand">
