@@ -1,6 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Логіка для хедера та кнопок (залишено з вашого коду) ---
+document.addEventListener('DOMContentLoaded', function ()  {
+    const submitOrderBtn = document.querySelector('.submit-order-btn');
+    if (submitOrderBtn) {
+    submitOrderBtn.addEventListener('click', function(e) {
+        e.preventDefault(); // Запобігаємо стандартній поведінці форми (якщо кнопка у формі)
+        alert('Дякуємо за замовлення!');
+        
+        // очиститка кошик після замовлення
+        cart = [];
+        cartSectionWrapper.classList.add('hidden');
+        renderCart();
+    });
+}
     const topBanner = document.getElementById('topBanner');
     const closeBannerBtn = document.getElementById('closeBannerBtn');
 
@@ -9,11 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
             topBanner.style.display = 'none';
         });
     }
-
+    
     const allButtons = document.querySelectorAll('.btn');
     allButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // alert('Ця кнопка поки що в розробці!');
         });
     });
 
@@ -29,8 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-
-    // --- НОВА ЛОГІКА ДЛЯ КОШИКА ---
 
     const productGrid = document.getElementById('product-grid');
     const cartItemsContainer = document.getElementById('cart-items');
@@ -152,5 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
         cartTotalElement.textContent = `$${total.toFixed(2)}`;
     }
 });
+
 
 

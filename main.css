@@ -1,4 +1,4 @@
-/* --- Загальні скидання та стилі --- */
+/* Загальні скидання та стилі */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -12,14 +12,14 @@ body {
     line-height: 1.6;
 }
 
-/* --- Загальний контейнер для центрування --- */
+/* Для центрування */
 .container {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* --- Стилі хедера --- */
+/* Хедера */
 .site-header {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -38,7 +38,7 @@ body {
 .logo {
     font-size: 2em;
     font-weight: bold;
-    color: #639a67; /* Той самий зелений, що і в hero-блоці */
+    color: #639a67;
 }
 
 .main-navigation ul {
@@ -61,30 +61,30 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Замість бежевого фону робимо ефект при наведенні */
+/* Ефект при наведенні */
 .main-navigation a:hover {
-    background-color: #d2ae74; /* Світло-сірий фон при наведенні */
-    color: #000; /* Можеш залишити або теж задати інший колір */
+    background-color: #d2ae74; 
+    color: #000; 
 }
 
-/* --- Стилі для акційного банера --- */
+
 .promo-banner {
     display: flex;
-    justify-content: center;  /* по горизонталі */
-    align-items: center;      /* по вертикалі */
-    padding: 20px 0;          /* Відступи зверху і знизу */
-    background-color: #eaf6ea; /* світло-зелений фон  */
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #eaf6ea;
 }
 
 .promo-banner img {
-    width: 100%;        /* Тягне банер на всю ширину контейнера */
+    width: 100%;
     max-width: 1100px;
     height: auto;
-    border-radius: 10px; /* згладження країв */
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* тінь */
 }
 
-/* Заголовок асортименту */
+
 .assortment-header {
     text-align: center;
     margin-bottom: 40px;
@@ -92,10 +92,10 @@ body {
 
 .assortment-header h1 {
     font-size: 2.5em;
-    color: #4F6A4F; /* Темно-зелений */
+    color: #4F6A4F;
 }
 
-/* Сітка для товарів */
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -104,26 +104,26 @@ body {
     margin: 0 auto;
 }
 
-/* Стилі для заголовка асортименту */
+
 .assortment-title {
-    text-align: center;      /* Центруємо весь текст всередині */
-    margin-top: 40px;        /* Верхній відступ, щоб відокремити від попереднього контенту */
-    margin-bottom: 40px;     /* Нижній відступ до карток товарів */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .assortment-title h1 {
-    font-size: 2.5em;        /* Великий розмір для головного заголовка */
-    color: #006400;           /* Ваш колір DarkGreen */
-    margin-bottom: 10px;     /* Невеликий відступ від заголовка до опису під ним */
+    font-size: 2.5em;
+    color: #006400;
+    margin-bottom: 10px;
 }
 
 .assortment-title p {
-    font-size: 1.1em;        /* Розмір тексту для опису */
-    color: #666;             /* Сірий колір для менш важливого тексту */
+    font-size: 1.1em;
+    color: #666;
     margin-top: 0;
 }
 
-/* Стилі для картки товару */
+
 .product-card {
     background-color: #fff;
     border: 1px solid #e0e0e0;
@@ -140,7 +140,7 @@ body {
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
-/* Контейнер для зображення */
+
 .product-image-container {
     height: 250px;
     background-color: #f4f4f4;
@@ -154,7 +154,7 @@ body {
     transition: opacity 0.4s ease;
 }
 
-/* Тег товару (Органічний, Преміум і т.д.) */
+
 .product-tag {
     position: absolute;
     top: 10px;
@@ -166,12 +166,11 @@ body {
     font-size: 0.8em;
 }
 
-/* Інформація про товар */
 .product-info {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Дозволяє блоку розтягуватися */
+    flex-grow: 1;
 }
 
 .product-name {
@@ -190,12 +189,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto; /* Притискає цей блок до низу картки */
+    margin-top: auto;
 }
 
-/* Кнопка "Додати в кошик" */
 .add-to-cart-btn {
-    background-color: #228B22; /* ForestGreen */
+    background-color: #228B22;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -207,7 +205,7 @@ body {
 }
 
 .add-to-cart-btn:hover {
-    background-color: #2E9E2E; /* Трохи світліший зелений */
+    background-color: #2E9E2E;
 }
 
 .hero-section {
@@ -244,9 +242,6 @@ body {
 .mission-text h3 { margin-top: 0; margin-bottom: 10px; font-size: 22px; color: #333; }
 .mission-text p { margin-bottom: 0; color: #555; }
 
-
-
-/* --- Стилі для футера --- */
 .site-footer {
     background-color: #555555;
     color: #ffffff;
@@ -270,7 +265,6 @@ body {
 .contact-item a { color: #ffffff; text-decoration: none; }
 .contact-item a:hover, .footer-brand a:hover { text-decoration: underline; }
 
-/* ========= СТИЛІ СЕКЦІЇ КОШИКА ========= */
 .hidden {
     display: none;
 }
@@ -422,7 +416,7 @@ body {
     color: #228B22;
 }
 
-/* --- Адаптивність для мобільних пристроїв --- */
+/* Адаптивність для мобільних пристроїв */
 @media (max-width: 992px) {
     .hero-layout, .about-content { flex-direction: column; text-align: center; }
     .hero-buttons { justify-content: center; }
